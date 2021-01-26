@@ -1,0 +1,16 @@
+{
+  "name": "Y",
+  "version": "-y",
+  "main": "y",
+  "license": "y",
+  "devDependencies": {
+    "sass": "^1.26.11"
+  },
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "description": "y",
+  "repository": "y",
+  "author": "y",
+  "private": true
+}

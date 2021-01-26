@@ -1,0 +1,31 @@
+//Main Colourss//
+
+@mixin pink-bg {
+  background-color: #ffdecc;
+}
+
+@mixin blue-bg {
+  background-color: #cceaff;
+}
+
+//FONTS//
+
+@mixin dark-title {
+  font-family: "Vidaloka", serif;
+  color: #3f3f3f;
+}
+
+@mixin para-dark {
+  font-family: "Raleway", sans-serif;
+  color: #3f3f3f;
+}
+
+@mixin light-title {
+  font-family: "Vidaloka", serif;
+  color: #f7f3f0;
+}
+
+@mixin light-para {
+  font-family: "Raleway", sans-serif;
+  color: #f7f3f0;
+}

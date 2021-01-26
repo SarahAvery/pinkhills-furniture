@@ -173,6 +173,11 @@ body {
   height: 100%;
 }
 
+span .light-para {
+  font-family: "Raleway", sans-serif;
+  color: #f7f3f0;
+}
+
 header {
   background-color: #ffdecc;
   width: 100%;
@@ -242,6 +247,58 @@ header .main-header .nav nav ul li ul li {
 }
 header .main-header .nav nav ul li ul li a {
   text-decoration: underline;
+}
+
+section {
+  width: 100%;
+  margin-top: 10px;
+}
+section .header-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+section .header-banner .color {
+  width: 100%;
+  display: flex;
+  background-color: #cceaff;
+  justify-content: center;
+  border-radius: 94% 6% 97% 3%/7% 94% 6% 93%;
+}
+section .header-banner .hb-img {
+  margin: 20px 0 30px 0;
+  display: flex;
+  width: 90%;
+  height: 600px;
+  background-image: url(/pink-living-room-chair.1160f5f5.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+}
+section .header-banner .hb-img .text {
+  display: flex;
+}
+section .header-banner .hb-img .text p {
+  font-family: "Vidaloka", serif;
+  color: #f7f3f0;
+  font-size: 50px;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    width: 100%;
+  }
+  section .header-banner {
+    margin: 5px 0;
+    background-color: blue;
+  }
+  section .header-banner .hb-img {
+    margin: 0 5px;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=/js.00a46daa.css.map */

@@ -13,6 +13,12 @@ body {
   // @include pink-bg;
 }
 
+span {
+  .light-para {
+    @include light-para;
+  }
+}
+
 //MAIN//
 
 header {
@@ -48,7 +54,7 @@ header {
 
             a {
               text-decoration: none;
-              @include para-dark;
+              @include dark-para;
               font-weight: bold;
 
               svg {
@@ -99,16 +105,80 @@ header {
   }
 }
 
+section {
+  width: 100%;
+  //background-color: blueviolet;
+  margin-top: 10px;
+
+  .header-banner {
+    width: 100%;
+    display: flex;
+    //margin: 30px auto;
+    //background-color: blue;
+    justify-content: center;
+
+    .color {
+      width: 100%;
+      display: flex;
+      background-color: #cceaff;
+      justify-content: center;
+      border-radius: 94% 6% 97% 3% / 7% 94% 6% 93%;
+    }
+
+    .hb-img {
+      margin: 20px 0 30px 0;
+      display: flex;
+      width: 90%;
+      height: 600px;
+      background-image: url(../img/pink-living-room-chair.jpg);
+      background-repeat: no-repeat;
+      background-position: cover;
+      border-radius: 50px;
+      align-items: center;
+      justify-content: center;
+
+      .text {
+        display: flex;
+        //background-color: #ffffff63;
+
+        p {
+          @include light-title;
+          font-size: 50px;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 420px) {
 }
 
-@media only screen and (min-width: 421px) and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
+  section {
+    width: 100%;
+
+    .header-banner {
+      margin: 5px 0;
+      background-color: blue;
+
+      .hb-img {
+        margin: 0 5px;
+        width: 100%;
+
+        .text {
+          p {
+          }
+        }
+      }
+    }
+  }
 }
 
-@media only screen and (min-width: 421px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (max-width: 1023px) {
 }
 
 @media only screen and (min-width: 1024px) {

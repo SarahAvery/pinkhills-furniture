@@ -355,6 +355,9 @@ header .main-header .nav nav ul li ul li a {
     margin: 0 5px;
     width: 100%;
   }
+  section .header-banner .hb-img .text p {
+    font-weight: bold;
+  }
 }
 
 /*# sourceMappingURL=/js.00a46daa.css.map */

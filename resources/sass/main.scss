@@ -108,14 +108,11 @@ header {
 
 .banner {
   width: 100%;
-  //background-color: blueviolet;
   margin-top: 90px;
 
   .header-banner {
     width: 100%;
     display: flex;
-    //margin: 30px auto;
-    //background-color: blue;
     justify-content: center;
 
     .color {
@@ -123,7 +120,7 @@ header {
       display: flex;
       background-color: #cceaff;
       justify-content: center;
-      border-radius: 94% 6% 97% 3% / 7% 94% 6% 93%;
+      border-radius: 93% 7% 90% 10% / 22% 79% 21% 78%;
     }
 
     .hb-img {
@@ -179,7 +176,7 @@ header {
       }
 
       .color {
-        width: 35%;
+        width: 400px;
         display: flex;
         justify-content: center;
 
@@ -195,7 +192,7 @@ header {
       }
 
       .sr-info {
-        width: 60%;
+        width: 800px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -211,6 +208,177 @@ header {
     }
   }
 }
+
+.home-shop {
+  margin: 10px 0;
+  width: 100%;
+
+  .hs-cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: auto;
+
+    .hs-card {
+      width: 33%;
+      height: 400px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px auto;
+      padding: 8px;
+
+      .left {
+        border-radius: 100% 0% 100% 0% / 54% 52% 48% 46%;
+        background-color: #ffdecc;
+      }
+
+      .right {
+        border-radius: 0% 100% 0% 100% / 46% 48% 52% 54%;
+        background-color: #cceaff;
+      }
+
+      .color {
+        width: 70%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+
+        .hs-img {
+          width: 90%;
+          height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+          }
+        }
+      }
+
+      .hs-info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          width: 80%;
+          border-radius: 20px;
+          background-color: rgb(238, 232, 232);
+          line-height: 2;
+          padding: 10px;
+          @include dark-para;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background-color: #cceaff;
+    border-radius: 20px 20px 0 0;
+    border-radius: 93% 7% 100% 0% / 22% 100% 0% 100%;
+
+    .map {
+      display: flex;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      border-radius: 20px 20px 0 0;
+      padding: 10px;
+      margin-top: 10px;
+
+      img {
+        width: 80%;
+        height: auto;
+        border-radius: 20px;
+      }
+    }
+    .f-info {
+      display: flex;
+      width: 100%;
+      height: 150px;
+      background-color: #cceaff;
+      padding-top: 10px;
+      flex-wrap: wrap;
+
+      .footer-nav {
+        display: flex;
+        height: 70px;
+        width: 100%;
+        margin: 0 auto;
+
+        nav {
+          margin: 0 auto;
+
+          ul {
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+
+            li {
+              height: 100%;
+              display: block;
+              transition-duration: 0.5s;
+              align-items: center;
+              border-radius: 10px;
+              margin: 0 8px;
+
+              a {
+                text-decoration: none;
+                @include dark-para;
+                font-weight: bold;
+                padding: 5px;
+
+                svg {
+                  height: auto;
+                  width: 30px;
+                }
+              }
+            }
+
+            li:hover {
+              cursor: pointer;
+              @include pink-bg;
+            }
+          }
+        }
+      }
+
+      .icons {
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        p {
+          height: 100%;
+
+          a {
+            padding: 8px;
+
+            svg {
+              height: 30px;
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//MEDIA//
 
 @media only screen and (max-width: 420px) {
 }
@@ -237,7 +405,40 @@ header {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 780px) {
+}
+
+@media only screen and (max-width: 950px) {
+  .showrooms {
+    margin: 10px 0;
+    width: 100%;
+
+    .sr-cards {
+      .sr-card {
+        .left {
+          margin-right: 10px;
+        }
+
+        .right {
+          margin-left: 10px;
+        }
+
+        .color {
+          width: 50%;
+        }
+
+        .sr-info {
+          width: 50%;
+          height: 100%;
+
+          p {
+            width: 100%;
+            max-height: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1023px) {

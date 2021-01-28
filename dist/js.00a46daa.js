@@ -194,15 +194,36 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\img\\pink-living-room-chair.jpg":[["pink-living-room-chair.1160f5f5.jpg","resources/img/pink-living-room-chair.jpg"],"resources/img/pink-living-room-chair.jpg"],"_css_loader":"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
+},{"_css_loader":"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"resources/sass/header.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"resources/sass/home-page.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./..\\img\\pink-living-room-chair.jpg":[["pink-living-room-chair.1160f5f5.jpg","resources/img/pink-living-room-chair.jpg"],"resources/img/pink-living-room-chair.jpg"],"_css_loader":"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"resources/sass/footer.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 require("../resources/css/css-reset.css");
 
 require("../resources/sass/main");
 
+require("../resources/sass/header");
+
+require("../resources/sass/home-page");
+
+require("../resources/sass/footer");
+
 console.log("Hello");
-},{"../resources/css/css-reset.css":"resources/css/css-reset.css","../resources/sass/main":"resources/sass/main.scss"}],"../../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../resources/css/css-reset.css":"resources/css/css-reset.css","../resources/sass/main":"resources/sass/main.scss","../resources/sass/header":"resources/sass/header.scss","../resources/sass/home-page":"resources/sass/home-page.scss","../resources/sass/footer":"resources/sass/footer.scss"}],"../../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

@@ -4,13 +4,14 @@ import "../resources/css/css-reset.css";
 //Global
 import "../resources/sass/main";
 
-//Header
-import "../resources/sass/header";
+console.log("hi");
 
-//Home Page
-import "../resources/sass/home-page";
+const mediaQuery600 = window.matchMedia("(max-width: 600px)");
+console.log("working");
 
-//Footer
-import "../resources/sass/footer";
+if (mediaQuery600.matches) {
+  const rightColor = document.getElementById("right-color");
+  const rightInfo = document.getElementById("right-info");
 
-console.log("Hello");
+  rightInfo.after(rightColor);
+}

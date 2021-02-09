@@ -1,16 +1,24 @@
 {
-  "name": "Y",
-  "version": "-y",
-  "main": "y",
-  "license": "y",
+  "name": "pinkhills-furniture",
+  "version": "0.0.1",
+  "main": "pages/index.html",
+  "license": "MIT",
   "devDependencies": {
-    "sass": "^1.26.11"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.26.11",
+    "browser-sync": "^2.26.14"
   },
   "scripts": {
-    "start": "parcel index.html"
+    "start": "gulp",
+    "build": "gulp build"
   },
-  "description": "y",
-  "repository": "y",
-  "author": "y",
-  "private": true
+  "repository": "https://github.com/SarahAvery/pinkhills-furniture.git",
+  "author": "SarahAvery",
+  "private": true,
+  "dependencies": {
+    
+    "gulp-cli": "^2.3.0"
+  }
 }

@@ -58,7 +58,7 @@
       display: flex;
       justify-content: space-between;
       margin: 10px 0;
-      padding: 8px;
+      padding: 5px;
 
       .left {
         border-radius: 100% 0% 100% 0% / 54% 52% 48% 46%;
@@ -92,6 +92,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
         p {
           width: 80%;
           height: 80%;
@@ -265,42 +266,30 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .banner {
-    width: 100%;
-    margin-top: 90px;
+  .showrooms {
+    .sr-cards {
+      .sr-card {
+        height: auto;
+        flex-wrap: wrap;
+        max-height: none;
+        padding: 0;
+        margin: 8px 0;
 
-    .header-banner {
-      width: 100%;
-      display: flex;
-      justify-content: center;
+        .color {
+          width: 60%;
+          max-width: 350px;
+          height: 260px;
+          margin: 0 auto;
+        }
 
-      .color {
-        width: 100%;
-        display: flex;
-        background-color: #cceaff;
-        justify-content: center;
-        border-radius: 93% 7% 90% 10% / 22% 79% 21% 78%;
-      }
-
-      .hb-img {
-        margin: 20px 0 30px 0;
-        display: flex;
-        width: 90%;
-        height: 600px;
-        background-image: url(../img/pink-living-room-chair.jpg);
-        background-repeat: no-repeat;
-        background-position: cover;
-        border-radius: 50px;
-        align-items: center;
-        justify-content: center;
-
-        .text {
-          display: flex;
+        .sr-info {
+          padding: 10px 0;
+          width: 100%;
+          height: auto;
 
           p {
-            @include light-title;
-            font-size: 50px;
-            font-style: italic;
+            width: 90%;
+            height: 100%;
           }
         }
       }
@@ -309,6 +298,9 @@
 
   .home-shop {
     .hs-cards {
+      width: 100%;
+      height: auto;
+
       .hs-card {
         width: 100%;
         height: 250px;
@@ -316,16 +308,19 @@
         .color {
           width: 45%;
           height: 100%;
+
+          .hs-img {
+            width: 90%;
+            height: auto;
+          }
         }
 
         .hs-info {
           width: 55%;
+          height: 100%;
 
           p {
-            width: 90%;
-            height: 80%;
-            display: flex;
-            align-items: center;
+            width: 80%;
           }
         }
       }
@@ -395,22 +390,11 @@
 
   .home-shop {
     .hs-cards {
-      display: block;
-      height: auto;
-
       .hs-card {
-        display: flex;
-        flex-wrap: wrap;
         height: 200px;
 
         .color {
           width: 50%;
-          display: flex;
-
-          .hs-img {
-            width: 90%;
-            height: 100%;
-          }
         }
 
         .hs-info {
